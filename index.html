@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Maps Directions</title>
+  <style>
+    /* Set the map container's size */
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Google Maps Directions</h1>
+  
+  <!-- Add input fields for addresses -->
+  <label for="origin">Origin:</label>
+  <input type="text" id="origin">
+  
+  <label for="destination">Destination:</label>
+  <input type="text" id="destination">
+  
+  <!-- Add a button to trigger the directions calculation -->
+  <button onclick="calculateRoute()">Get Directions</button>
+  
+  <!-- Add a container for the map -->
+  <div id="map"></div>
+  
+  <!-- Include the Google Maps JavaScript API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOx2x3Pu4ZSK6gbKGsuaIlj-iIcO9pZM8&libraries=places"></script>
+  
+  <!-- Include your custom JavaScript code -->
+  <script src="script.js"></script>
+</body>
+</html>
